@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haikal Ibnu Hafizh - CV Online</title>
+<meta name="description" content="CV online Haikal Ibnu Hafizh, siswa XI TKJ 2 SMK Galajuara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EDF2;
+  --paper:#FFFFFF;
+  --ink:#1A2433;
+  --muted:#556275;
+  --line:#CBD3DE;
+  --blue:#1E4FB8;
+  --blue-dark:#173F96;
+  --amber:#F0B429;
+  --on-blue:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  font-size:17px;line-height:1.6;
+}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;line-height:1.2}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+.wrap{
+  max-width:1060px;margin:0 auto;padding:40px 20px;
+  display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start;
+}
+
+/* Kolom kiri */
+.side{
+  background:var(--blue);color:var(--on-blue);
+  padding:32px 28px;position:sticky;top:24px;
+  border-radius:6px;
+}
+.initials{
+  width:96px;height:96px;background:var(--amber);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:34px;
+  border-radius:6px;margin-bottom:22px;
+}
+.side h1{font-size:28px;font-weight:700;margin-bottom:6px}
+.side .role{font-size:16px;opacity:.92;margin-bottom:26px}
+.side h2{
+  font-size:15px;font-weight:600;margin:0 0 10px;
+  padding-top:18px;border-top:1px solid rgba(255,255,255,.35);
+}
+.contact{list-style:none;margin-bottom:22px}
+.contact li{padding:7px 0;font-size:16px;word-break:break-word}
+.contact span{display:block;font-size:14px;opacity:.8}
+.contact a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}
+.contact a:hover{border-bottom-color:var(--amber);color:var(--amber)}
+.social{display:flex;flex-direction:column;gap:10px}
+.btn{
+  display:block;padding:10px 14px;background:var(--paper);color:var(--blue-dark);
+  text-decoration:none;font-weight:600;border-radius:4px;font-size:16px;
+}
+.btn small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.btn:hover{background:var(--amber);color:var(--ink)}
+.btn:hover small{color:var(--ink)}
+
+/* Kolom kanan */
+main{display:flex;flex-direction:column;gap:20px}
+section{background:var(--paper);padding:30px 34px;border-radius:6px}
+section h2{
+  font-size:23px;font-weight:700;margin-bottom:16px;
+  padding-left:14px;border-left:5px solid var(--amber);
+}
+section p{max-width:64ch}
+
+.facts{display:grid;grid-template-columns:150px 1fr;row-gap:10px;margin-top:20px}
+.facts dt{color:var(--muted)}
+.facts dd{font-weight:600}
+
+/* Riwayat sekolah: urutan waktu */
+.timeline{list-style:none;border-left:3px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 26px 26px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;
+  background:var(--paper);border:3px solid var(--blue);border-radius:50%;
+}
+.timeline li.now::before{background:var(--blue)}
+.timeline h3{font-size:19px}
+.timeline .year{color:var(--muted);font-size:16px}
+.tag{
+  display:inline-block;margin-left:8px;padding:1px 9px;font-size:14px;font-weight:600;
+  background:var(--amber);color:var(--ink);border-radius:3px;vertical-align:2px;
+}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{border:2px solid var(--line);padding:18px 20px;border-radius:4px}
+.box h3{font-size:18px;margin-bottom:6px}
+.box p{font-size:16px;color:var(--muted)}
+
+footer{text-align:center;color:var(--muted);font-size:15px;padding:6px 0 30px}
+
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;padding:20px 14px}
+  .side{position:static}
+}
+@media (max-width:560px){
+  section{padding:24px 20px}
+  .two{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr;row-gap:2px}
+  .facts dd{margin-bottom:10px}
+}
+@media print{
+  body{background:#fff}
+  .side{position:static;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="side">
+    <div class="initials" aria-hidden="true">HIH</div>
+    <h1>Haikal Ibnu Hafizh</h1>
+    <p class="role">Siswa Teknik Komputer Jaringan, SMK Galajuara</p>
+
+    <h2>Kontak</h2>
+    <ul class="contact">
+      <li><span>Telepon</span><a href="tel:+628132175574">0813 2175 574</a></li>
+      <li><span>WhatsApp</span><a href="https://wa.me/628132175574" target="_blank" rel="noopener">Kirim pesan</a></li>
+      <li><span>Email</span><a href="mailto:hibnu1598@gmail.com">hibnu1598@gmail.com</a></li>
+      <li><span>Alamat</span>Villa Indah Pulo Timaha</li>
+    </ul>
+
+    <h2>Media sosial</h2>
+    <div class="social">
+      <a class="btn" href="https://www.instagram.com/hklibnu_/" target="_blank" rel="noopener">Instagram<small>@hklibnu_</small></a>
+      <a class="btn" href="https://www.tiktok.com/@hklibnu_" target="_blank" rel="noopener">TikTok<small>@hklibnu_</small></a>
+    </div>
+  </aside>
+
+  <main>
+    <section id="tentang">
+      <h2>Tentang saya</h2>
+      <p>Saya Haikal, siswa kelas XI TKJ 2 di SMK Galajuara. Saya sedang belajar dasar-dasar komputer dan jaringan di sekolah, dan di luar itu saya suka mencoba memberi perintah (prompting) ke AI agar hasilnya sesuai yang saya butuhkan.</p>
+      <dl class="facts">
+        <dt>Tempat, tanggal lahir</dt><dd>Bekasi, 29 Oktober 2009</dd>
+        <dt>Kelas</dt><dd>XI TKJ 2</dd>
+        <dt>Jurusan</dt><dd>Teknik Komputer Jaringan</dd>
+        <dt>Alamat</dt><dd>Villa Indah Pulo Timaha</dd>
+      </dl>
+    </section>
+
+    <section id="pendidikan">
+      <h2>Riwayat pendidikan</h2>
+      <ol class="timeline">
+        <li class="now">
+          <h3>SMK Galajuara <span class="tag">Sekarang</span></h3>
+          <p class="year">2025 - sekarang. Jurusan Teknik Komputer Jaringan</p>
+        </li>
+        <li>
+          <h3>SMP IT Warungpring</h3>
+          <p class="year">2022 - 2025</p>
+        </li>
+        <li>
+          <h3>SDN Jaticempaka 03</h3>
+          <p class="year">2016 - 2022</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian dan minat</h2>
+      <div class="two">
+        <div class="box">
+          <h3>Prompting</h3>
+          <p>Menyusun instruksi yang jelas untuk AI supaya jawaban atau hasilnya tepat sasaran.</p>
+        </div>
+        <div class="box">
+          <h3>Bermain game</h3>
+          <p>Hobi saya. Dari sini saya terbiasa dengan komputer dan perangkat digital.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hubungi">
+      <h2>Hubungi saya</h2>
+      <p>Untuk perkenalan, kerja sama, atau pertanyaan lain, kirim email ke <a href="mailto:hibnu1598@gmail.com"><strong>hibnu1598@gmail.com</strong></a> atau hubungi lewat <a href="https://wa.me/628132175574" target="_blank" rel="noopener"><strong>WhatsApp</strong></a>.</p>
+    </section>
+  </main>
+
+</div>
+<footer>Haikal Ibnu Hafizh</footer>
+</body>
+</html>
